@@ -15,6 +15,7 @@ public class Character
     private String name;
     private String desc; 
     private Room myRoom; 
+    private Room currentRoom; 
 
     /**
      * Constructor for objects of class Character
@@ -46,6 +47,10 @@ public class Character
         return desc;
     }
     
+   public void changeRoom(Room newRoom)
+    {
+        currentRoom = newRoom; 
+    }
     
     
 }

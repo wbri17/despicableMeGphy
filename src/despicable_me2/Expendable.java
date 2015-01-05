@@ -37,11 +37,11 @@ public class Expendable extends Item
         ArrayList<Item> invent = new ArrayList<Item>();
         invent = myPlayer.getInventory(); 
         Item theItem = this; 
-        for (int i; i< invent.size(); i++)
+        for (int i=0; i< invent.size(); i++)
         {
             if (invent.get(i)== theItem)
             {
-                myPlayer.getInventory(i).remove();
+                myPlayer.removeItemInventory (i);
             }
     }
 }

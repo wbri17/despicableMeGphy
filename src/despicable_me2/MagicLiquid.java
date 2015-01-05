@@ -29,7 +29,7 @@ public class MagicLiquid extends Expendable
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int inject(Minion theMinion)
+    public void inject(Minion theMinion)
     {
         // put your code here
         use();

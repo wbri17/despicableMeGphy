@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import java.util.*; 
 /**
  *
  * @author william
@@ -66,10 +66,6 @@ public class Player extends Character
         return w; 
     }
     
-    public void changeRoom(Room newRoom)
-    {
-        currentRoom = newRoom; 
-    }
     
     public Room getCurrentRoom()
     {
@@ -81,13 +77,23 @@ public class Player extends Character
         return (inventory); 
     }
     
-        public ArrayList<Item> getInventorySpecific(int i)
+    public ArrayList<Item> getInventorySpecific(int i)
     {
-        for (int j; j<inventory.size() ; j++){
+        for (int j = 0; j<inventory.size() ; j++){
             if (j==i){
-            inventory(j).remove();           
+            return inventory;           
         }
-        
+        return null; 
+        }
+        return null; 
+    }
+    
+    public void removeItemInventory (int j){
+    
+        for (int i=0; i<inventory.size(); i++){
+            if (j==i){
+                inventory.remove(j); 
+            }
         }
     }
 }
