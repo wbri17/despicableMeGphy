@@ -29,7 +29,7 @@ public class Game
     private Room rocket; 
     private Room moon; 
     private Room garden; 
-    private Room villa; 
+    private Room villa;  
     
     // private int score; 
         
@@ -41,7 +41,7 @@ public class Game
         createRooms();
         createCharacter(); 
         myPlayer= new Player (nom, "the player", bedRoom); 
-
+         
         //parser = new Parser();
         //score = 1000; 
     }
