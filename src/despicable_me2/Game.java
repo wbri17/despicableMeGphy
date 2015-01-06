@@ -19,6 +19,17 @@ public class Game
     private Character Martian2; 
     private Character BadMinion1; 
     private Character BadMinion2; 
+    private Room bedRoom; 
+    private Room toilet; 
+    private Room dressing; 
+    private Room bathRoom; 
+    private Room kitchen; 
+    private Room livingRoom; 
+    private Room lab;
+    private Room rocket; 
+    private Room moon; 
+    private Room garden; 
+    private Room villa; 
     
     // private int score; 
         
@@ -29,7 +40,7 @@ public class Game
     {
         createRooms();
         createCharacter(); 
-        myPlayer= new Player (nom, "the player", null); 
+        myPlayer= new Player (nom, "the player", bedRoom); 
 
         //parser = new Parser();
         //score = 1000; 
@@ -39,13 +50,13 @@ public class Game
      */
     public void createCharacter()
     {
-        Character Gru = new Character ("Gru", "Agnes Father", null); 
-        Character Dog = new Character ("Dog", "Gru's dog", null);
-        Character Professor_Nefario = new Character ("Professor Nefario", "Professor", null);
-        Character Martian1 = new Character ("Martian 1", "1", null); 
-        Character Martian2 = new Character ("Martian 2", "2", null);
-        Minion BadMinion = new Minion ("Bad Minion", "Minion who need to be cured", null, false); 
-        Minion BadMinion2 = new Minion ("Bad Minion", "Minion who need to be cured", null, false); 
+        Character Gru = new Character ("Gru", "Agnes Father", kitchen); 
+        Character Dog = new Character ("Dog", "Gru's dog", livingRoom);
+        Character Professor_Nefario = new Character ("Professor Nefario", "Professor", lab);
+        Character Martian1 = new Character ("Martian 1", "1", moon); 
+        Character Martian2 = new Character ("Martian 2", "2", moon);
+        Minion BadMinion = new Minion ("Bad Minion", "Minion who need to be cured", bathRoom, false); 
+        Minion BadMinion2 = new Minion ("Bad Minion", "Minion who need to be cured", villa, false); 
     }
     /**
      * Create all the rooms and link their exits together.
@@ -87,14 +98,8 @@ public class Game
         //LockedExit doors1 = new LockedExit(bedRoom,toilet, key1); 
         
 
-        myPlayer.changeRoom(bedRoom);  // start game in the bedRoom
-        Gru.changeRoom(kitchen); 
-        Dog.changeRoom(livingRoom); 
-        Professor_Nefario.changeRoom(lab); 
-        Martian1.changeRoom(moon);
-        Martian2.changeRoom(moon);
-        BadMinion1.changeRoom(bathRoom);
-        BadMinion2.changeRoom(villa);
+        //myPlayer.changeRoom(bedRoom);  // start game in the bedRoom
+
     }
 
 

@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
  * @author william
  */
 public class Start extends javax.swing.JFrame {
-
+private Game newGame; 
     /**
      * Creates new form Start
      */
@@ -71,11 +71,13 @@ public class Start extends javax.swing.JFrame {
         Object source = evt.getSource();
         if (source == jButton1){
             Game Jeux = new Game ("Paul");
+            
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
+    /** *****************************************************************************************************
+     * @param args the command line arguments MAIN
+     * ****************************************************************************************************
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -105,8 +107,10 @@ public class Start extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Start().setVisible(true);
-            }
+            } 
         });
+        
+   
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
