@@ -16,6 +16,7 @@ public class Player extends Character
     private ArrayList<Item> inventory;  
     private static final int MAX_WEIGHT = 10; 
     private Room currentRoom; 
+    private int score; 
 
     /**
      * Constructor for objects of class Player
@@ -94,6 +95,30 @@ public class Player extends Character
             if (j==i){
                 inventory.remove(j); 
             }
+        }
+    }
+    public int getScore(){
+        return score; 
+    }
+    
+    public String getStringScore(){
+        return "Score" + score; 
+    }
+    
+    public void setScorePlus(int i){
+        score = score + i;
+    }
+    
+    public void setScoreMoins(int i){
+        score = score - i; 
+    }
+    
+    public boolean isScorePositive(){
+        if (score > 0){
+            return true;
+        }
+        else { 
+            return false;
         }
     }
 }

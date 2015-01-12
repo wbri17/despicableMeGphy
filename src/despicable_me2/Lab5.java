@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author william

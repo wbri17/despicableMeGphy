@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author william
@@ -86,23 +87,45 @@ public class LivingRoom2 extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        myGame.myPlayer.setScorePlus(300);
         LivingRoom5 Mafenetre2 = new LivingRoom5();
+        Mafenetre2.setGame(myGame);
         Mafenetre2.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        LivingRoom3 Mafenetre2 = new LivingRoom3();
-        Mafenetre2.setVisible(true);
-        this.dispose();
+        myGame.myPlayer.setScoreMoins(500);
+        if (myGame.myPlayer.isScorePositive()){
+            LivingRoom3 Mafenetre2 = new LivingRoom3();
+            Mafenetre2.setGame(myGame);
+            Mafenetre2.setVisible(true);
+            this.dispose();
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "You lose to much point! Restart! ");
+            Start Mafenetre2 = new Start();
+            Mafenetre2.setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        LivingRoom4 Mafenetre2 = new LivingRoom4();
-        Mafenetre2.setVisible(true);
-        this.dispose();
+        myGame.myPlayer.setScoreMoins(300);
+        if (myGame.myPlayer.isScorePositive()){
+            LivingRoom4 Mafenetre2 = new LivingRoom4();
+            Mafenetre2.setGame(myGame);
+            Mafenetre2.setVisible(true);
+            this.dispose();
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "You lose to much point! Restart! ");
+            Start Mafenetre2 = new Start();
+            Mafenetre2.setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -139,6 +162,11 @@ public class LivingRoom2 extends javax.swing.JFrame {
             }
         });
     }
+    public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

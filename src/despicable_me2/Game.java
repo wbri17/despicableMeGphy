@@ -11,7 +11,7 @@ package despicable_me2;
  */
 public class Game 
 {
-    private Player myPlayer;
+    protected Player myPlayer;
     private Character Gru; 
     private Character Dog; 
     private Character Professor_Nefario;
@@ -40,7 +40,8 @@ public class Game
     {
         createRooms();
         createCharacter(); 
-        myPlayer= new Player (nom, "the player", bedRoom); 
+        myPlayer= new Player (nom, "the player", bedRoom);
+        myPlayer.setScorePlus(1000);
          
         //parser = new Parser();
         //score = 1000; 

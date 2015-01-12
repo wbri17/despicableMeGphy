@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author william
@@ -91,6 +92,11 @@ public class LivingRoom5 extends javax.swing.JFrame {
             }
         });
     }
+    public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
