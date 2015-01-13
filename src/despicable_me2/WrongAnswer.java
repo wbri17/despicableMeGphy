@@ -48,6 +48,8 @@ public class WrongAnswer extends javax.swing.JFrame {
 
         jButton2.setText("Restart the Game");
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 140, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\marg1.jpg")); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 430));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -70,6 +72,7 @@ public class WrongAnswer extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
             AfterTime next = new AfterTime();
+            next.setGame(myGame); 
              next.setVisible(true);
              this.dispose();
         // TODO add your handling code here:
@@ -110,7 +113,11 @@ public class WrongAnswer extends javax.swing.JFrame {
             }
         });
     }
-
+       public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

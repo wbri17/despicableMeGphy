@@ -38,6 +38,11 @@ public class Lab5 extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(255, 102, 0));
         jButton1.setText("NEXT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 390, 70, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\33.jpg")); // NOI18N
@@ -56,6 +61,14 @@ public class Lab5 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Lab6_1 Mafenetre2 = new Lab6_1();
+        Mafenetre2.setGame(myGame); 
+        Mafenetre2.setVisible(true); 
+        this.dispose(); 
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,6 +104,13 @@ public class Lab5 extends javax.swing.JFrame {
             }
         });
     }
+           
+    public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

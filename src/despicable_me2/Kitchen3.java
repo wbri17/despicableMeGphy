@@ -83,13 +83,13 @@ public class Kitchen3 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 90, 30));
 
-        jButton5.setText("Mon score");
+        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\points.jpg")); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(583, 20, 100, -1));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, 40, 20));
 
         jLabel1.setBackground(new java.awt.Color(0, 102, 102));
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

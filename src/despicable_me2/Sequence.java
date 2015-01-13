@@ -30,6 +30,8 @@ public class Sequence extends javax.swing.JFrame {
     public class progression implements ActionListener{
         public void actionPerformed(ActionEvent evt){
             
+            
+            jTextField1.setVisible(false); 
             int n=jProgressBar1.getValue();
             
             if (n<100){
@@ -41,11 +43,12 @@ public class Sequence extends javax.swing.JFrame {
           //  JOptionPane.showMessageDialog(null,"Time finished");
             
             AfterTime next = new AfterTime();
+            next.setGame(myGame); 
             next.setVisible(true);
-             //this.dispose();
+            dispose();
              
-             jPanel1.setVisible(false);
-             jLabel1.setVisible(false);
+             //jPanel1.setVisible(false);
+             //jLabel1.setVisible(false);
                          
     } 
         }
@@ -64,6 +67,7 @@ public class Sequence extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jProgressBar1 = new javax.swing.JProgressBar();
         jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -114,6 +118,12 @@ public class Sequence extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 310, -1));
+
+        jTextField1.setBackground(new java.awt.Color(102, 153, 255));
+        jTextField1.setCaretColor(new java.awt.Color(51, 153, 255));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 210, 190, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\38.JPG")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
@@ -183,10 +193,17 @@ public class Sequence extends javax.swing.JFrame {
     
     private Timer timer;
     
+public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

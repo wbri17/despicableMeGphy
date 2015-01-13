@@ -7,14 +7,14 @@ package despicable_me2;
 
 /**
  *
- * @author william
+ * @author Julien
  */
-public class Moon1 extends javax.swing.JFrame {
+public class LivingRoom7_C1_L1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Moon1
+     * Creates new form LivingRoom7_C1_L1
      */
-    public Moon1() {
+    public LivingRoom7_C1_L1() {
         initComponents();
     }
 
@@ -29,17 +29,30 @@ public class Moon1 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 102, 0));
-        jButton1.setText("NEXT");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, -1, -1));
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\despicableMeGphy-master\\src\\despicable_me2\\flèche droite.jpg")); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 70, 50));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\42.JPG")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\despicableMeGphy-master\\src\\despicable_me2\\flèche bas.jpg")); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(481, 300, 60, 70));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\despicableMeGphy-master\\src\\despicable_me2\\23.3.JPG")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 430));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -55,6 +68,20 @@ public class Moon1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       LivingRoom7_C2_L1 Mafenetre = new LivingRoom7_C2_L1();
+       Mafenetre.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+       LivingRoom7_C1_L2 Mafenetre = new LivingRoom7_C1_L2();
+       Mafenetre.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -73,26 +100,32 @@ public class Moon1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Moon1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivingRoom7_C1_L1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Moon1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivingRoom7_C1_L1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Moon1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivingRoom7_C1_L1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Moon1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LivingRoom7_C1_L1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Moon1().setVisible(true);
+                new LivingRoom7_C1_L1().setVisible(true);
             }
         });
     }
+           public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

@@ -85,7 +85,9 @@ public class AfterTime extends javax.swing.JFrame {
         String test = jTextField1.getText();
         if (test.startsWith("1136459696")){
                    
-                new WelcomeMoon().setVisible(true);
+                WelcomeMoon2 Mafenetre = new WelcomeMoon2();
+                Mafenetre.setGame(myGame);
+                Mafenetre.setVisible(true); 
                 this.dispose();
         }
         else {
@@ -136,6 +138,11 @@ public class AfterTime extends javax.swing.JFrame {
             }
         });
     }
+    public void setGame(Game Game2){
+        myGame = Game2; 
+    }
+    
+    private Game myGame;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

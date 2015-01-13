@@ -64,6 +64,8 @@ public class Kitchen1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        Item Unicorn = new Item("Unicorn", 1); 
+        myGame.myPlayer.pickUp(Unicorn); 
         Kitchen2 Mafenetre2 = new Kitchen2();
         Mafenetre2.setGame(myGame);
         Mafenetre2.setVisible(true);
