@@ -42,6 +42,8 @@ public class Game
         createCharacter(); 
         myPlayer= new Player (nom, "the player", bedRoom);
         myPlayer.setScorePlus(1000);
+        myPlayer.startSeringue(); 
+
          
         //parser = new Parser();
         //score = 1000; 

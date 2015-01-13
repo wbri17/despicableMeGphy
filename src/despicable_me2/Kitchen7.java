@@ -73,6 +73,7 @@ public class Kitchen7 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        myGame.myPlayer.haveLiquid();
         Kitchen10 Mafenetre2 = new Kitchen10();
         Mafenetre2.setGame(myGame);
         Mafenetre2.setVisible(true);

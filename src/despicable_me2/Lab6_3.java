@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import java.awt.*;
+import javax.swing.*;
 /**
  *
  * @author Julien
@@ -35,6 +36,7 @@ public class Lab6_3 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(255, 153, 0));
         jButton1.setText("Play again");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

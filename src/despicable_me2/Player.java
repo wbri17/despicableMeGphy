@@ -17,6 +17,8 @@ public class Player extends Character
     private static final int MAX_WEIGHT = 10; 
     private Room currentRoom; 
     private int score; 
+    private boolean HaveLiquid; 
+    private boolean HaveSeringue; 
 
     /**
      * Constructor for objects of class Player
@@ -120,6 +122,25 @@ public class Player extends Character
         else { 
             return false;
         }
+    }
+    public void haveLiquid(){
+        HaveLiquid=true; 
+    }
+        public void haveSeringue(){
+        HaveSeringue=true; 
+    }
+    
+        
+    public void startSeringue(){
+        HaveSeringue=false;
+        HaveLiquid=false; 
+    }
+    
+    public boolean getSeringue(){
+        return HaveSeringue;  
+    }
+    public boolean getLiquid(){
+        return HaveLiquid;  
     }
 }
 

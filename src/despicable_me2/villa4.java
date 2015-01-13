@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package despicable_me2;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author Margaux
@@ -35,6 +35,7 @@ public class villa4 extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton1.setBackground(new java.awt.Color(255, 102, 0));
         jButton1.setText("Try again");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +103,8 @@ public class villa4 extends javax.swing.JFrame {
             }
         });
     }
+    
+    
     public void setGame(Game Game2){
         myGame = Game2; 
     }

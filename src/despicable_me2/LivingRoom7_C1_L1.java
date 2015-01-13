@@ -72,6 +72,7 @@ public class LivingRoom7_C1_L1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
        LivingRoom7_C2_L1 Mafenetre = new LivingRoom7_C2_L1();
+       Mafenetre.setGame(myGame); 
        Mafenetre.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -79,6 +80,7 @@ public class LivingRoom7_C1_L1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
        LivingRoom7_C1_L2 Mafenetre = new LivingRoom7_C1_L2();
+       Mafenetre.setGame(myGame); 
        Mafenetre.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed

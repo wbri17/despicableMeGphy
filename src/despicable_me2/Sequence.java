@@ -5,7 +5,7 @@
  */
 package despicable_me2;
 
-import despicable_me2.AfterTime;
+//import despicable_me2.AfterTime;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
@@ -42,15 +42,17 @@ public class Sequence extends javax.swing.JFrame {
              timer.stop();
           //  JOptionPane.showMessageDialog(null,"Time finished");
             
-            AfterTime next = new AfterTime();
-            next.setGame(myGame); 
-            next.setVisible(true);
-            dispose();
+            AfterTime Mafenetre2 = new AfterTime();
+            Mafenetre2.setGame(myGame); 
+            Mafenetre2.setVisible(true);
+            //this.dispose();
+            }
+            //dispose();
              
              //jPanel1.setVisible(false);
              //jLabel1.setVisible(false);
                          
-    } 
+             
         }
 
     }
@@ -86,6 +88,7 @@ public class Sequence extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
+        jButton1.setBackground(new java.awt.Color(255, 102, 0));
         jButton1.setText("Start the timer");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,14 +194,14 @@ public class Sequence extends javax.swing.JFrame {
     
       
     
-    private Timer timer;
+   
     
 public void setGame(Game Game2){
         myGame = Game2; 
     }
     
     private Game myGame;
-    
+    private Timer timer;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
