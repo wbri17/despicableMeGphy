@@ -58,7 +58,7 @@
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\william\Desktop\M1GHY\WORLD OF ZUUL\points.jpg"/>
+              <Image iconType="2" name="C:\Users\william\Documents\NetBeansProjects\Despicable_Me2\src\despicable_me2\image\points.jpg"/>
             </Property>
           </Properties>
           <Events>
@@ -73,7 +73,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\william\Desktop\M1GHY\WORLD OF ZUUL\2.JPG"/>
+              <Image iconType="2" name="C:\Users\william\Documents\NetBeansProjects\Despicable_Me2\src\despicable_me2\image\2.JPG"/>
             </Property>
           </Properties>
           <Constraints>

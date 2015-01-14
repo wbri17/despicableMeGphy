@@ -46,7 +46,7 @@ public class Doors3 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 390, 100, -1));
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\points.jpg")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Documents\\NetBeansProjects\\Despicable_Me2\\src\\despicable_me2\\image\\points.jpg")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -54,7 +54,7 @@ public class Doors3 extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 10, 40, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Desktop\\M1GHY\\WORLD OF ZUUL\\5.JPG")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\william\\Documents\\NetBeansProjects\\Despicable_Me2\\src\\despicable_me2\\image\\5.JPG")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 430));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
